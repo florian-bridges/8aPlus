@@ -13,7 +13,7 @@ class NeuralNetwork(nn.Module):
             nn.Tanh(),
             nn.Linear(100, 50),
             nn.Tanh(),
-            nn.Linear(50, 1)
+            nn.Linear(50, 1),
         )
 
     def forward(self, x):
