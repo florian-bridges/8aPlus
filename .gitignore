@@ -164,3 +164,4 @@ utils/credentials.py
 env/
 notebooks/
 wandb/
+output/
