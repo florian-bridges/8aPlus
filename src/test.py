@@ -11,7 +11,9 @@ def test(dataloader, model, loss_fn, device="cuda"):
             X, y = X.to(device), y.to(device)
             pred = model(X)
             test_loss += loss_fn(pred, y).item()
-            test_acc += ((18 * pred).round() == (18 * y).round()).type(torch.float).sum().item()
+            test_acc += (
+                ((18 * pred).round() == (18 * y).round()).type(torch.float).sum().item()
+            )
     test_loss /= num_batches
     test_acc /= size
     return test_loss, test_acc

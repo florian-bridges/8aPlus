@@ -1,4 +1,3 @@
-
 import wandb
 import torch
 from torch import nn
@@ -18,8 +17,8 @@ print(f"Using {device} device")
 
 ## init wandb
 run = wandb.init(
-        project="8aPlus",
-    )
+    project="8aPlus",
+)
 
 boudler_dl = BoulderDataLoader(batch_size=4)
 

@@ -47,7 +47,7 @@ def hold_to_hold_type(hold):
 
 
 def convert_moves_to_numpy(moves):
-    moves_np = np.zeros((NUM_HOLD_TYPES, BOARD_HEIGHT,BOARD_WIDTH))
+    moves_np = np.zeros((NUM_HOLD_TYPES, BOARD_HEIGHT, BOARD_WIDTH))
 
     for hold in moves:
         x = int(ord(hold["description"][0]) - 65)
