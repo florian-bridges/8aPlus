@@ -163,3 +163,4 @@ data/
 utils/credentials.py
 env/
 notebooks/
+wandb/

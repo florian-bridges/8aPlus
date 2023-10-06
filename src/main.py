@@ -1,3 +1,5 @@
+
+import wandb
 import torch
 from torch import nn
 
@@ -14,10 +16,15 @@ device = (
 )
 print(f"Using {device} device")
 
+## init wandb
+run = wandb.init(
+        project="8aPlus",
+    )
+
 boudler_dl = BoulderDataLoader(batch_size=4)
 
 model = NeuralNetwork().to(device)
 print(model)
 loss_fn = nn.L1Loss()
 optimizer = torch.optim.SGD(model.parameters(), lr=3 * 1e-2)
-train(boudler_dl.get("train"), model, loss_fn, optimizer, epochs=15)
+train(boudler_dl.get("train"), model, loss_fn, optimizer, epochs=1000)
