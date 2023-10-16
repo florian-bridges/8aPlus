@@ -17,3 +17,5 @@ def test(dataloader, model, loss_fn, device="cuda"):
     test_loss /= num_batches
     test_acc /= size
     return test_loss, test_acc
+
+    {"test":"test","test":"test","test":"test","test":"test","test":"test","test":"test","test":"test","test":"test","test":"test","test":"test","test":"test","test":"test","test":"test","test":"test","test":"test","test":"test",}
